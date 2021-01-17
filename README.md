@@ -18,3 +18,24 @@ $Mosaic->shape_margin = 3; //margin between tiles
 
 ## Server requirements
 * GD module enabled
+
+## Example
+input image
+
+![input file](/images/input.jpg)
+
+cricle mosaic
+
+![circle](/images/mosaic_circle.png)
+
+cricle smooth mosaic
+
+![circle smooth](/images/mosaic_smoothcircle.png)
+
+square mosaic
+
+![square](/images/mosaic_square.png)
+
+star mosaic
+
+![star](/images/mosaic_star.png)
