@@ -116,7 +116,10 @@ class Mosaic {
         if(!empty($this->mosaic_image)){
             $save_as = "mosaic_" . $this->mosaic_shape . "_" . date("ymdHis") . ".png";
             if( !empty($save_filename) ){
-                $save_as = "mosaic_" . $this->mosaic_shape . "_" . date("ymdHis") . ".png";
+                if(substr($save_filename, -4) !== ".png"){
+                    $save_filename .= ".png";
+                }
+                $save_as = $save_filename;
             }
             return imagepng($this->mosaic_image, __DIR__ . "/" . $save_as);
         }
